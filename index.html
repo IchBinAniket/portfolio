@@ -1,278 +1,541 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aniket Bali - Portfolio</title>
+  <title>Aniket Bali | AI-Integrated Full Stack Developer</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+  />
+
   <style>
+
     body {
-      background-color: #111827;
-      color: #f3f4f6;
+      background:
+        radial-gradient(circle at top left, #1e3a8a 0%, #0f172a 40%),
+        #020617;
+      color: #f8fafc;
+      overflow-x: hidden;
+      font-family: Inter, sans-serif;
     }
+
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #22d3ee, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glow {
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+    }
+
+    .skill-pill {
+      padding: 8px 14px;
+      border-radius: 9999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: 0.3s;
+    }
+
+    .skill-pill:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,0.12);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
     .icon-hover:hover {
       transform: scale(1.2);
-      transition: transform 0.3s;
+      transition: 0.3s;
     }
-    .scroll-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 50;
-      background: #374151;
-      padding: 10px;
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .badge {
+      background: rgba(34, 211, 238, 0.15);
+      color: #67e8f9;
+      border: 1px solid rgba(34,211,238,0.25);
+      padding: 8px 16px;
       border-radius: 9999px;
-      color: white;
+      font-size: 14px;
     }
+
+    .timeline-border {
+      border-left: 2px solid rgba(255,255,255,0.1);
+    }
+
   </style>
 </head>
-<body class="font-sans leading-relaxed tracking-wide">
 
-  <!-- Cover Section -->
-  <section id="cover" class="bg-gray-900 py-12 px-8 md:flex items-center justify-between">
-    <div class="max-w-3xl" data-aos="fade-right">
-      <h1 class="text-4xl font-bold">Aniket Bali</h1>
-      <p class="text-xl mt-2 text-gray-400">
-        Full Stack Developer | Angular | .NET | GenAI | Debugging, Fixing & Building Scalable Apps
-      </p>
-      <div class="flex gap-4 mt-4 text-2xl">
-        <a href="https://www.linkedin.com/in/aniket-bali-0270761a0" class="icon-hover text-blue-400"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/IchBinAniket" class="icon-hover text-gray-300"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/_aniket_bali_" class="icon-hover text-pink-400"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/aniket.balipatil" class="icon-hover text-blue-600"><i class="fab fa-facebook"></i></a>
-        <a href="tel:+917774928309" class="icon-hover text-green-400"><i class="fas fa-phone"></i></a>
-        <a href="mailto:aniketbali777@gmail.com" class="icon-hover text-red-400"><i class="fas fa-envelope"></i></a>
+<body>
+
+<!-- HERO SECTION -->
+<section class="min-h-screen flex items-center px-6 lg:px-20 py-20">
+
+  <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
+
+    <div data-aos="fade-right">
+
+      <div class="badge w-fit mb-5">
+        AI Systems • Full Stack • Cloud Engineering
       </div>
-      <a href="./Aniket.pdf" target="_blank" class="inline-block mt-5 px-5 py-2 border border-gray-400 text-gray-300 hover:bg-gray-700 transition rounded">Download Resume</a>
+
+      <h1 class="text-5xl lg:text-7xl font-black leading-tight">
+        Hi, I'm
+        <span class="gradient-text">Aniket Bali</span>
+      </h1>
+
+      <h2 class="text-2xl lg:text-3xl text-slate-300 mt-6 font-semibold leading-relaxed">
+        AI-Integrated Full Stack Developer building scalable
+        cloud & agentic AI systems with .NET, Angular, React & Azure.
+      </h2>
+
+      <p class="mt-8 text-slate-400 text-lg leading-relaxed max-w-2xl">
+        Production experience designing AI orchestration loops,
+        real-time WebSocket streaming systems, cloud optimization engines,
+        and multi-tenant SaaS platforms.
+      </p>
+
+      <div class="flex flex-wrap gap-4 mt-10">
+
+        <a
+          href="./Aniket.pdf"
+          target="_blank"
+          class="px-7 py-4 rounded-xl bg-cyan-500 hover:bg-cyan-400 transition text-black font-semibold glow"
+        >
+          Download Resume
+        </a>
+
+        <a
+          href="#projects"
+          class="px-7 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition"
+        >
+          View Projects
+        </a>
+
+      </div>
+
+      <div class="flex gap-6 mt-10 text-2xl">
+
+        <a href="https://www.linkedin.com/in/aniket-bali-0270761a0" target="_blank" class="icon-hover text-cyan-400">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/IchBinAniket" target="_blank" class="icon-hover text-white">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="mailto:aniketbali777@gmail.com" class="icon-hover text-red-400">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="tel:+917774928309" class="icon-hover text-green-400">
+          <i class="fas fa-phone"></i>
+        </a>
+
+      </div>
+
     </div>
-    <div>
-      <img src="profile irani.jpeg" alt="Profile Picture of Aniket Bali" class="w-64 mt-10 md:mt-0 rounded-lg shadow-lg" />
+
+    <div class="flex justify-center" data-aos="fade-left">
+
+      <div class="glass rounded-3xl p-4 glow">
+
+        <img
+          src="profile irani.jpeg"
+          alt="Aniket Bali"
+          class="w-[350px] rounded-2xl"
+        />
+
+      </div>
+
     </div>
-  </section>
 
-  <main class="max-w-5xl mx-auto px-6">
+  </div>
 
-    <!-- About Section -->
- <section id="about" class="py-10" data-aos="fade-up">
-  <h2 class="text-2xl font-semibold mb-2">About Me</h2>
-
-  <p>
-   Full stack Developer with 2.6+ years of experience building scalable web applications using .NET,
-    Angular, and React. Hands-on experience with Microsoft Azure, including cloud monitoring, cost
-    optimization, and real-time metrics integration, with exposure to FinOps principles.
-  </p>
-  <br>
-
-  <p>
-    Strong exposure to Generative AI, integrating AI-driven insights and chatbots into
-    production systems to deliver intelligent, data-driven solutions. Passionate about backend systems,
-    cloud technologies, and building high-impact scalable applications.
-  </p>
 </section>
 
+<!-- QUICK STATS -->
+<section class="px-6 lg:px-20 pb-10">
 
+  <div class="grid md:grid-cols-4 gap-6">
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-10" data-aos="fade-up">
-      <h2 class="text-2xl font-semibold mb-4">Technical Skills</h2>
-
- <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 text-center">
-
-  <!-- Backend -->
-  <div>
-    <i class="fas fa-server text-4xl text-purple-400"></i>
-    <p>.NET</p>
-  </div>
-
-  <!-- Angular -->
-  <div>
-    <i class="fab fa-angular text-4xl text-red-500"></i>
-    <p>Angular</p>
-  </div>
-
-  <!-- React -->
-  <div>
-    <i class="fab fa-react text-4xl text-cyan-400"></i>
-    <p>React</p>
-  </div>
-
-  <!-- Database -->
-  <div>
-    <i class="fas fa-database text-4xl text-green-300"></i>
-    <p>SQL</p>
-  </div>
-
-  <!-- Azure (FIXED ICON) -->
-  <div>
-    <i class="fas fa-cloud-upload-alt text-4xl text-blue-500"></i>
-    <p>Azure</p>
-  </div>
-
-  <!-- GenAI -->
-  <div>
-    <i class="fas fa-robot text-4xl text-pink-500"></i>
-    <p>GenAI</p>
-  </div>
-
-<div>
-  <i class="fas fa-chart-line text-4xl text-yellow-400"></i>
-  <p>FinOps</p>
-</div>
-
-
-  <!-- Microservices -->
-  <div>
-    <i class="fas fa-network-wired text-4xl text-teal-400"></i>
-    <p>Microservices</p>
-  </div>
-
-  <!-- REST APIs (DIFFERENT ICON NOW) -->
-  
-
-  <!-- NPM -->
-  <div>
-    <i class="fab fa-npm text-4xl text-red-500"></i>
-    <p>NPM</p>
-  </div>
-
-  <!-- Git -->
-  <div>
-    <i class="fab fa-git-alt text-4xl text-orange-500"></i>
-    <p>Git</p>
-  </div>
-
-  <!-- CI/CD -->
-  <div>
-    <i class="fas fa-cogs text-4xl text-gray-300"></i>
-    <p>CI/CD</p>
-  </div>
-
-  <!-- i18n -->
-  <div>
-    <i class="fas fa-globe text-4xl text-emerald-400"></i>
-    <p>i18n</p>
-  </div>
-
-</div>
-    </section>
-
-    <!-- Work Experience Section -->
-    <section id="work-experience" class="py-10" data-aos="fade-right">
-      <h2 class="text-2xl font-semibold mb-4">Work Experience</h2>
-      <div>
-        
-        <h3 class="text-lg font-bold mt-8">
-  Full stack Developer – Avalpha Technologies Pvt Ltd | Apr 2025 - Mar 2026
-</h3>
-
-<h4 class="text-md font-semibold mt-2">Koritsu AI (FinOps / Cloud SaaS)</h4>
-
-<p>
-  Worked on a cloud cost optimization and monitoring platform designed to help organizations analyze,
-  manage, and reduce cloud expenses. The system provided real-time dashboards, automated reporting,
-  and AI-driven insights aligned with FinOps principles.
-</p>
-
-
-</div>
-<hr class="my-6 border-gray-700" />
-
-        <h4 class="text-lg font-bold">Software Engineer – Yugensys Software LLP | Oct 2023 - Mar 2025</h4>
-
-        <h3 class="text-lg font-bold mt-6">Coast System (Manufacturing)</h3>
-        <p>
-          Built a full-stack Asset Management System for large-scale manufacturers to track mold lifecycle and performance analytics. 
-          Upgraded Angular version 12 to 16 with multilingual support (English, Spanish, Chinese) via NGX Translate. 
-          Implemented REST APIs with dotnet and C#, Chart.js visualizations, Excel import/export via EPPlus.
-          Integrated GenAI for formula automation using LLaMA3 with AWS Bedrock. 
-          Improved asset monitoring and reduced downtime through predictive data insights.
-        </p>
-
-        <h3 class="text-lg font-bold mt-4">Voiro-Myntra (AdTech)</h3>
-        <p>
-          Developed advanced ad-management modules for multiple clients using Angular 18. Integrated frontend with RESTful APIs provided by Python. 
-          Implemented dynamic bid management, reusable UI modules, and lazy loading for optimized performance.  
-          Enhanced performance through modular architecture and reusable services.
-        </p>
-
-        
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-10" data-aos="fade-left">
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-
-      <div class="mb-6">
-        <h4 class="font-bold">Aikya Seva Centre – NGO Website</h4>
-        Live Site: <a href="https://aikyaseva.com" class="text-blue-400" target="_blank">https://aikyaseva.com</a>
-        <p>
-          Developed a fully responsive WebApp for Aikya Seva Center, an NGO focused on rural empowerment based in Ahilyanagar, Maharashtra. 
-          Implemented dynamic blogs from JSON data (simulating headless CMS), volunteer registration via Angular Reactive Forms + Zapier directly to Google Sheets, and 
-          EmailJS for auto-confirmations and updates, Used Angular Material + SCSS for mobile-first design and deployed on custom domain. Managed end-to-end development independently.
-        </p>
-      </div>
-
-      <div class="mb-6">
-        <h4 class="font-bold">Bus Rental Service (CDAC)</h4>
-        <p>
-          Built an online bus booking platform using .NET Core backend and React frontend. 
-          Features include OTP-based authentication, Google Maps API integration, EmailJS for booking confirmations, 
-          and secure payment workflow for event bookings (weddings, office tours, etc.). 
-          Focused on creating a user-friendly, reliable booking experience.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="font-bold">Voice-based Email for the Visually Impaired People</h4>
-        <p>
-          Designed a voice-controlled email system integrating Google Speech-to-Text & Text-to-Speech APIs 
-          for composing, reading, and sending emails. Aimed to improve accessibility through hands-free, speech-driven interaction.
-        </p>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-10" data-aos="fade-up">
-      <h2 class="text-2xl font-semibold mb-4">Education</h2>
-      <ul class="list-disc list-inside">
-        <li>B.E. in Computer Science – G.H. Raisoni College Of Engineering, Ahilyanagar - 2022</li>
-        <li>HSC – Ashokbhau Firodia Jr. College - 2018</li>
-        <li>SSC – Rupibai Bora New English School - 2016</li>
-      </ul>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-10" data-aos="fade-up">
-      <h2 class="text-2xl font-semibold mb-4">Certifications</h2>
-      <ul class="list-disc list-inside">
-        <li>PG Diploma in Advanced Computing (CDAC) – IET Pune</li>
-        <li>German Language – A1 Level</li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="bg-gray-900 text-center py-6 mt-10">
-    <a href="./Aniket.pdf" target="_blank" class="inline-block mt-5 px-5 py-2 border border-gray-400 text-gray-300 hover:bg-gray-700 transition rounded">Download Resume</a>
-    <div class="flex justify-center mt-4 gap-4 text-xl">
-      <a href="https://www.linkedin.com/in/aniket-bali-0270761a0" class="icon-hover text-blue-400"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/IchBinAniket" class="icon-hover text-gray-300"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/_aniket_bali_" class="icon-hover text-pink-400"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/aniket.balipatil" class="icon-hover text-blue-600"><i class="fab fa-facebook"></i></a>
-      <a href="tel:+917774928309" class="icon-hover text-green-400"><i class="fas fa-phone"></i></a>
-      <a href="mailto:aniketbali777@gmail.com" class="icon-hover text-red-400"><i class="fas fa-envelope"></i></a>
+    <div class="glass rounded-2xl p-6 text-center">
+      <h3 class="text-4xl font-black gradient-text">2.6+</h3>
+      <p class="text-slate-400 mt-2">Years Experience</p>
     </div>
-    <br>
-    <div class="text-gray-400 text-sm">© 2025 Aniket Bali. All rights reserved.</div>
-  </footer>
 
-  <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+    <div class="glass rounded-2xl p-6 text-center">
+      <h3 class="text-4xl font-black gradient-text">11</h3>
+      <p class="text-slate-400 mt-2">AI Tools Engineered</p>
+    </div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000 });</script>
+    <div class="glass rounded-2xl p-6 text-center">
+      <h3 class="text-4xl font-black gradient-text">15</h3>
+      <p class="text-slate-400 mt-2">AI Loop Rounds</p>
+    </div>
+
+    <div class="glass rounded-2xl p-6 text-center">
+      <h3 class="text-4xl font-black gradient-text">50%</h3>
+      <p class="text-slate-400 mt-2">Cloud Cost Reduction</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="px-6 lg:px-20 py-20" id="about">
+
+  <div data-aos="fade-up">
+
+    <h2 class="section-title gradient-text">
+      About Me
+    </h2>
+
+    <div class="glass rounded-3xl p-10">
+
+      <p class="text-lg leading-relaxed text-slate-300">
+        Full Stack Developer with experience building AI-powered SaaS platforms,
+        cloud optimization systems, and scalable web applications using .NET,
+        Angular, React, Azure, and AWS Bedrock.
+      </p>
+
+      <p class="text-lg leading-relaxed text-slate-300 mt-6">
+        I enjoy solving architectural problems involving async orchestration,
+        multi-tenant backend systems, AI tool execution pipelines,
+        real-time event streaming, and cloud cost intelligence.
+      </p>
+
+      <p class="text-lg leading-relaxed text-slate-300 mt-6">
+        Currently focused on growing toward AI Systems Architecture —
+        building reliable, observable, scalable AI infrastructure
+        for production environments.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WHAT I BUILD -->
+<section class="px-6 lg:px-20 py-10">
+
+  <h2 class="section-title gradient-text" data-aos="fade-up">
+    What I Build
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="glass rounded-3xl p-8 project-card transition" data-aos="zoom-in">
+      <i class="fas fa-robot text-4xl text-cyan-400"></i>
+      <h3 class="text-2xl font-bold mt-5">Agentic AI Systems</h3>
+      <p class="text-slate-400 mt-4">
+        Multi-tool orchestration loops, function-calling agents,
+        autonomous workflows, and context-aware AI systems.
+      </p>
+    </div>
+
+    <div class="glass rounded-3xl p-8 project-card transition" data-aos="zoom-in">
+      <i class="fas fa-cloud text-4xl text-purple-400"></i>
+      <h3 class="text-2xl font-bold mt-5">Cloud Optimization</h3>
+      <p class="text-slate-400 mt-4">
+        Azure monitoring, P95 rightsizing recommendations,
+        cloud metrics aggregation, and FinOps analytics.
+      </p>
+    </div>
+
+    <div class="glass rounded-3xl p-8 project-card transition" data-aos="zoom-in">
+      <i class="fas fa-bolt text-4xl text-yellow-400"></i>
+      <h3 class="text-2xl font-bold mt-5">Real-Time Systems</h3>
+      <p class="text-slate-400 mt-4">
+        SignalR WebSocket streaming, live AI status updates,
+        async background orchestration, and scalable APIs.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="px-6 lg:px-20 py-20" id="skills">
+
+  <h2 class="section-title gradient-text" data-aos="fade-up">
+    Technical Skills
+  </h2>
+
+  <div class="space-y-10">
+
+    <div data-aos="fade-up">
+      <h3 class="text-xl font-bold mb-4">AI & Agentic Systems</h3>
+
+      <div class="flex flex-wrap gap-4">
+        <div class="skill-pill">Anthropic Claude</div>
+        <div class="skill-pill">Tool Calling</div>
+        <div class="skill-pill">AWS Bedrock</div>
+        <div class="skill-pill">LLaMA 3</div>
+        <div class="skill-pill">Prompt Engineering</div>
+        <div class="skill-pill">Prompt Caching</div>
+        <div class="skill-pill">Multi-tool AI Loops</div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up">
+      <h3 class="text-xl font-bold mb-4">Backend & Cloud</h3>
+
+      <div class="flex flex-wrap gap-4">
+        <div class="skill-pill">.NET Core 8</div>
+        <div class="skill-pill">ASP.NET Web API</div>
+        <div class="skill-pill">SignalR</div>
+        <div class="skill-pill">Azure Monitor API</div>
+        <div class="skill-pill">Blob Storage</div>
+        <div class="skill-pill">Service Bus</div>
+        <div class="skill-pill">REST APIs</div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up">
+      <h3 class="text-xl font-bold mb-4">Frontend</h3>
+
+      <div class="flex flex-wrap gap-4">
+        <div class="skill-pill">Angular 12–19</div>
+        <div class="skill-pill">React</div>
+        <div class="skill-pill">TypeScript</div>
+        <div class="skill-pill">TailwindCSS</div>
+        <div class="skill-pill">SCSS</div>
+        <div class="skill-pill">JavaScript ES6+</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FEATURED PROJECT -->
+<section class="px-6 lg:px-20 py-20" id="projects">
+
+  <h2 class="section-title gradient-text" data-aos="fade-up">
+    Featured Project
+  </h2>
+
+  <div class="glass rounded-3xl p-10" data-aos="fade-up">
+
+    <div class="flex flex-wrap gap-3 mb-6">
+
+      <div class="skill-pill">.NET Core</div>
+      <div class="skill-pill">React</div>
+      <div class="skill-pill">Azure</div>
+      <div class="skill-pill">Anthropic Claude</div>
+      <div class="skill-pill">SignalR</div>
+
+    </div>
+
+    <h3 class="text-4xl font-black">
+      Koritsu AI — FinOps SaaS Platform
+    </h3>
+
+    <p class="text-slate-300 text-lg mt-6 leading-relaxed">
+      Built an end-to-end AI-powered cloud optimization platform featuring
+      autonomous tool orchestration, real-time AI streaming,
+      Azure cost analytics, and rightsizing recommendations.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-10">
+
+      <div class="glass rounded-2xl p-6">
+        <h4 class="text-xl font-bold text-cyan-400">
+          AI Orchestration Engine
+        </h4>
+
+        <ul class="mt-5 space-y-3 text-slate-300">
+          <li>• Multi-tool AI orchestration loop</li>
+          <li>• 15-round autonomous execution flow</li>
+          <li>• Function-calling architecture</li>
+          <li>• Conversation state recovery</li>
+          <li>• Multi-tenant query isolation</li>
+        </ul>
+      </div>
+
+      <div class="glass rounded-2xl p-6">
+        <h4 class="text-xl font-bold text-purple-400">
+          Cloud Intelligence Engine
+        </h4>
+
+        <ul class="mt-5 space-y-3 text-slate-300">
+          <li>• P95 CPU rightsizing analysis</li>
+          <li>• Azure Monitor integration</li>
+          <li>• Real-time VM metrics</li>
+          <li>• Up to 50% cost reduction</li>
+          <li>• AI-generated cloud insights</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section class="px-6 lg:px-20 py-20">
+
+  <h2 class="section-title gradient-text" data-aos="fade-up">
+    Professional Experience
+  </h2>
+
+  <div class="timeline-border pl-8 space-y-12">
+
+    <div data-aos="fade-right">
+
+      <div class="glass rounded-3xl p-8">
+
+        <h3 class="text-2xl font-bold">
+          Full Stack Developer — AI & Cloud
+        </h3>
+
+        <p class="text-cyan-400 mt-2">
+          Avalpha Technologies Pvt Ltd • Apr 2025 – Mar 2026
+        </p>
+
+        <p class="mt-6 text-slate-300 leading-relaxed">
+          Built production AI systems for cloud cost optimization,
+          real-time analytics, and autonomous AI-driven cloud insights
+          using Claude tool-calling architecture and Azure services.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div data-aos="fade-right">
+
+      <div class="glass rounded-3xl p-8">
+
+        <h3 class="text-2xl font-bold">
+          Full Stack Developer
+        </h3>
+
+        <p class="text-cyan-400 mt-2">
+          Yugensys Software LLP • Oct 2023 – Mar 2025
+        </p>
+
+        <p class="mt-6 text-slate-300 leading-relaxed">
+          Developed enterprise manufacturing and AdTech platforms using
+          Angular, .NET, AWS Bedrock, and REST APIs while improving
+          scalability, multilingual support, and frontend architecture.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CURRENTLY EXPLORING -->
+<section class="px-6 lg:px-20 py-20">
+
+  <h2 class="section-title gradient-text" data-aos="fade-up">
+    Currently Exploring
+  </h2>
+
+  <div class="glass rounded-3xl p-10">
+
+    <div class="flex flex-wrap gap-4">
+
+      <div class="skill-pill">AI Observability</div>
+      <div class="skill-pill">Distributed AI Agents</div>
+      <div class="skill-pill">Vector Databases</div>
+      <div class="skill-pill">Semantic Search</div>
+      <div class="skill-pill">AI Infrastructure</div>
+      <div class="skill-pill">MCP Protocol</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="px-6 lg:px-20 py-20">
+
+  <div class="glass rounded-3xl p-12 text-center" data-aos="zoom-in">
+
+    <h2 class="text-5xl font-black gradient-text">
+      Let's Build Something Powerful
+    </h2>
+
+    <p class="text-slate-400 mt-6 text-lg">
+      Open to Full Stack, AI Engineering,
+      and Cloud-focused opportunities.
+    </p>
+
+    <div class="flex justify-center flex-wrap gap-6 mt-10 text-xl">
+
+      <a href="mailto:aniketbali777@gmail.com" class="skill-pill">
+        <i class="fas fa-envelope mr-2"></i>
+        Email
+      </a>
+
+      <a href="tel:+917774928309" class="skill-pill">
+        <i class="fas fa-phone mr-2"></i>
+        Call
+      </a>
+
+      <a href="https://github.com/IchBinAniket" target="_blank" class="skill-pill">
+        <i class="fab fa-github mr-2"></i>
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/aniket-bali-0270761a0" target="_blank" class="skill-pill">
+        <i class="fab fa-linkedin mr-2"></i>
+        LinkedIn
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-10 text-slate-500 border-t border-white/5">
+  © 2026 Aniket Bali • AI-Integrated Full Stack Developer
+</footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 </body>
 </html>
