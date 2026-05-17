@@ -21,7 +21,7 @@
 
     body {
       background:
-        radial-gradient(circle at top left, #1e3a8a 0%, #0f172a 40%),
+        radial-gradient(circle at top left, #3b0764 0%, #0f172a 45%),
         #020617;
       color: #f8fafc;
       overflow-x: hidden;
@@ -35,13 +35,13 @@
     }
 
     .gradient-text {
-      background: linear-gradient(to right, #22d3ee, #a855f7);
+      background: linear-gradient(to right, #f472b6, #c084fc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     .glow {
-      box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+      box-shadow: 0 0 30px rgba(244, 114, 182, 0.25);
     }
 
     .skill-pill {
@@ -73,9 +73,9 @@
     }
 
     .badge {
-      background: rgba(34, 211, 238, 0.15);
-      color: #67e8f9;
-      border: 1px solid rgba(34,211,238,0.25);
+      background: rgba(244, 114, 182, 0.12);
+      color: #f9a8d4;
+      border: 1px solid rgba(244,114,182,0.18);
       padding: 8px 16px;
       border-radius: 9999px;
       font-size: 14px;
@@ -85,20 +85,58 @@
       border-left: 2px solid rgba(255,255,255,0.1);
     }
 
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background: #f472b6;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
   </style>
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
-<section class="min-h-screen flex items-center px-6 lg:px-20 py-20">
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 glass px-6 lg:px-20 py-5 flex justify-between items-center">
 
-  <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
+  <h1 class="text-2xl font-black gradient-text">
+    ANIKET BALI
+  </h1>
+
+  <div class="hidden md:flex gap-8 text-sm uppercase tracking-wider">
+
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+
+  </div>
+
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center px-6 lg:px-20 py-32">
+
+  <div class="grid lg:grid-cols-2 gap-16 items-center w-full">
 
     <div data-aos="fade-right">
 
       <div class="badge w-fit mb-5">
-        AI Systems • Full Stack • Cloud Engineering
+        Full Stack • AI • Cloud • SaaS
       </div>
 
       <h1 class="text-5xl lg:text-7xl font-black leading-tight">
@@ -107,14 +145,16 @@
       </h1>
 
       <h2 class="text-2xl lg:text-3xl text-slate-300 mt-6 font-semibold leading-relaxed">
-        AI-Integrated Full Stack Developer building scalable
-        cloud & agentic AI systems with .NET, Angular, React & Azure.
+        AI-Integrated Full Stack Developer specializing in scalable SaaS applications,
+        cloud systems, AI integrations, and modern frontend architecture using
+        .NET, Angular, React, Azure & GenAI.
       </h2>
 
       <p class="mt-8 text-slate-400 text-lg leading-relaxed max-w-2xl">
-        Production experience designing AI orchestration loops,
-        real-time WebSocket streaming systems, cloud optimization engines,
-        and multi-tenant SaaS platforms.
+        Passionate about building intelligent systems,
+        real-time applications,
+        cloud-integrated platforms,
+        and modern user experiences that solve real-world problems.
       </p>
 
       <div class="flex flex-wrap gap-4 mt-10">
@@ -122,7 +162,7 @@
         <a
           href="./Aniket.pdf"
           target="_blank"
-          class="px-7 py-4 rounded-xl bg-cyan-500 hover:bg-cyan-400 transition text-black font-semibold glow"
+          class="px-7 py-4 rounded-xl bg-pink-500 hover:bg-pink-400 transition text-black font-semibold glow"
         >
           Download Resume
         </a>
@@ -138,7 +178,7 @@
 
       <div class="flex gap-6 mt-10 text-2xl">
 
-        <a href="https://www.linkedin.com/in/aniket-bali-0270761a0" target="_blank" class="icon-hover text-cyan-400">
+        <a href="https://www.linkedin.com/in/aniket-bali-0270761a0" target="_blank" class="icon-hover text-pink-400">
           <i class="fab fa-linkedin"></i>
         </a>
 
@@ -176,7 +216,7 @@
 
 </section>
 
-<!-- QUICK STATS -->
+<!-- STATS -->
 <section class="px-6 lg:px-20 pb-10">
 
   <div class="grid md:grid-cols-4 gap-6">
@@ -187,18 +227,18 @@
     </div>
 
     <div class="glass rounded-2xl p-6 text-center">
-      <h3 class="text-4xl font-black gradient-text">11</h3>
-      <p class="text-slate-400 mt-2">AI Tools Engineered</p>
+      <h3 class="text-4xl font-black gradient-text">Angular 19</h3>
+      <p class="text-slate-400 mt-2">Frontend Expertise</p>
     </div>
 
     <div class="glass rounded-2xl p-6 text-center">
-      <h3 class="text-4xl font-black gradient-text">15</h3>
-      <p class="text-slate-400 mt-2">AI Loop Rounds</p>
+      <h3 class="text-4xl font-black gradient-text">AI</h3>
+      <p class="text-slate-400 mt-2">Production Integrations</p>
     </div>
 
     <div class="glass rounded-2xl p-6 text-center">
-      <h3 class="text-4xl font-black gradient-text">50%</h3>
-      <p class="text-slate-400 mt-2">Cloud Cost Reduction</p>
+      <h3 class="text-4xl font-black gradient-text">Azure</h3>
+      <p class="text-slate-400 mt-2">Cloud Experience</p>
     </div>
 
   </div>
@@ -217,21 +257,25 @@
     <div class="glass rounded-3xl p-10">
 
       <p class="text-lg leading-relaxed text-slate-300">
-        Full Stack Developer with experience building AI-powered SaaS platforms,
-        cloud optimization systems, and scalable web applications using .NET,
-        Angular, React, Azure, and AWS Bedrock.
+        Full Stack Developer with experience building scalable SaaS applications,
+        AI-powered systems,
+        cloud-integrated dashboards,
+        and modern frontend architectures using .NET, Angular, React, SQL Server, and Azure.
       </p>
 
       <p class="text-lg leading-relaxed text-slate-300 mt-6">
-        I enjoy solving architectural problems involving async orchestration,
-        multi-tenant backend systems, AI tool execution pipelines,
-        real-time event streaming, and cloud cost intelligence.
+        Hands-on exposure to Generative AI integrations,
+        real-time applications,
+        cloud monitoring systems,
+        intelligent reporting,
+        and enterprise-grade backend APIs.
       </p>
 
       <p class="text-lg leading-relaxed text-slate-300 mt-6">
-        Currently focused on growing toward AI Systems Architecture —
-        building reliable, observable, scalable AI infrastructure
-        for production environments.
+        I enjoy building products end-to-end —
+        from frontend experiences to backend architecture,
+        API integrations,
+        and cloud-connected intelligent systems.
       </p>
 
     </div>
@@ -250,30 +294,55 @@
   <div class="grid md:grid-cols-3 gap-6">
 
     <div class="glass rounded-3xl p-8 project-card transition" data-aos="zoom-in">
-      <i class="fas fa-robot text-4xl text-cyan-400"></i>
-      <h3 class="text-2xl font-bold mt-5">Agentic AI Systems</h3>
+
+      <i class="fas fa-layer-group text-4xl text-pink-400"></i>
+
+      <h3 class="text-2xl font-bold mt-5">
+        Full Stack Platforms
+      </h3>
+
       <p class="text-slate-400 mt-4">
-        Multi-tool orchestration loops, function-calling agents,
-        autonomous workflows, and context-aware AI systems.
+        Enterprise-grade applications using .NET,
+        Angular, React, REST APIs,
+        SQL Server, and scalable backend architecture.
       </p>
+
     </div>
 
     <div class="glass rounded-3xl p-8 project-card transition" data-aos="zoom-in">
-      <i class="fas fa-cloud text-4xl text-purple-400"></i>
-      <h3 class="text-2xl font-bold mt-5">Cloud Optimization</h3>
+
+      <i class="fas fa-robot text-4xl text-violet-400"></i>
+
+      <h3 class="text-2xl font-bold mt-5">
+        AI-Powered Features
+      </h3>
+
       <p class="text-slate-400 mt-4">
-        Azure monitoring, P95 rightsizing recommendations,
-        cloud metrics aggregation, and FinOps analytics.
+        Intelligent chatbot systems,
+        AI integrations,
+        automation workflows,
+        cloud analytics,
+        and modern AI-enhanced applications.
       </p>
+
     </div>
 
     <div class="glass rounded-3xl p-8 project-card transition" data-aos="zoom-in">
+
       <i class="fas fa-bolt text-4xl text-yellow-400"></i>
-      <h3 class="text-2xl font-bold mt-5">Real-Time Systems</h3>
+
+      <h3 class="text-2xl font-bold mt-5">
+        Real-Time Systems
+      </h3>
+
       <p class="text-slate-400 mt-4">
-        SignalR WebSocket streaming, live AI status updates,
-        async background orchestration, and scalable APIs.
+        SignalR streaming,
+        dashboards,
+        cloud metrics,
+        reporting systems,
+        and optimized frontend performance.
       </p>
+
     </div>
 
   </div>
@@ -289,109 +358,225 @@
 
   <div class="space-y-10">
 
+    <!-- AI -->
     <div data-aos="fade-up">
-      <h3 class="text-xl font-bold mb-4">AI & Agentic Systems</h3>
+
+      <h3 class="text-xl font-bold mb-4">
+        AI & GenAI
+      </h3>
 
       <div class="flex flex-wrap gap-4">
         <div class="skill-pill">Anthropic Claude</div>
-        <div class="skill-pill">Tool Calling</div>
         <div class="skill-pill">AWS Bedrock</div>
         <div class="skill-pill">LLaMA 3</div>
         <div class="skill-pill">Prompt Engineering</div>
         <div class="skill-pill">Prompt Caching</div>
-        <div class="skill-pill">Multi-tool AI Loops</div>
+        <div class="skill-pill">AI Chatbots</div>
+        <div class="skill-pill">Tool Calling</div>
       </div>
+
     </div>
 
+    <!-- Backend -->
     <div data-aos="fade-up">
-      <h3 class="text-xl font-bold mb-4">Backend & Cloud</h3>
+
+      <h3 class="text-xl font-bold mb-4">
+        Backend
+      </h3>
 
       <div class="flex flex-wrap gap-4">
         <div class="skill-pill">.NET Core 8</div>
         <div class="skill-pill">ASP.NET Web API</div>
+        <div class="skill-pill">C#</div>
+        <div class="skill-pill">Entity Framework Core</div>
         <div class="skill-pill">SignalR</div>
-        <div class="skill-pill">Azure Monitor API</div>
-        <div class="skill-pill">Blob Storage</div>
-        <div class="skill-pill">Service Bus</div>
         <div class="skill-pill">REST APIs</div>
+        <div class="skill-pill">Background Services</div>
       </div>
+
     </div>
 
+    <!-- Frontend -->
     <div data-aos="fade-up">
-      <h3 class="text-xl font-bold mb-4">Frontend</h3>
+
+      <h3 class="text-xl font-bold mb-4">
+        Frontend
+      </h3>
 
       <div class="flex flex-wrap gap-4">
         <div class="skill-pill">Angular 12–19</div>
         <div class="skill-pill">React</div>
         <div class="skill-pill">TypeScript</div>
-        <div class="skill-pill">TailwindCSS</div>
-        <div class="skill-pill">SCSS</div>
         <div class="skill-pill">JavaScript ES6+</div>
+        <div class="skill-pill">HTML5</div>
+        <div class="skill-pill">SCSS</div>
+        <div class="skill-pill">Angular Material</div>
+        <div class="skill-pill">TailwindCSS</div>
       </div>
+
+    </div>
+
+    <!-- Cloud -->
+    <div data-aos="fade-up">
+
+      <h3 class="text-xl font-bold mb-4">
+        Cloud & DevOps
+      </h3>
+
+      <div class="flex flex-wrap gap-4">
+        <div class="skill-pill">Azure Monitor API</div>
+        <div class="skill-pill">Cost Management API</div>
+        <div class="skill-pill">Blob Storage</div>
+        <div class="skill-pill">Service Bus</div>
+        <div class="skill-pill">OAuth2</div>
+        <div class="skill-pill">Azure Auth</div>
+        <div class="skill-pill">Git</div>
+        <div class="skill-pill">CI/CD</div>
+      </div>
+
+    </div>
+
+    <!-- Database -->
+    <div data-aos="fade-up">
+
+      <h3 class="text-xl font-bold mb-4">
+        Database & Testing
+      </h3>
+
+      <div class="flex flex-wrap gap-4">
+        <div class="skill-pill">SQL Server</div>
+        <div class="skill-pill">EF Core</div>
+        <div class="skill-pill">xUnit</div>
+        <div class="skill-pill">Moq</div>
+        <div class="skill-pill">Shouldly</div>
+        <div class="skill-pill">Reqnroll</div>
+      </div>
+
     </div>
 
   </div>
 
 </section>
 
-<!-- FEATURED PROJECT -->
+<!-- PROJECTS -->
 <section class="px-6 lg:px-20 py-20" id="projects">
 
   <h2 class="section-title gradient-text" data-aos="fade-up">
-    Featured Project
+    Projects
   </h2>
 
-  <div class="glass rounded-3xl p-10" data-aos="fade-up">
+  <div class="grid lg:grid-cols-2 gap-8">
 
-    <div class="flex flex-wrap gap-3 mb-6">
+    <!-- NGO -->
+    <div class="glass rounded-3xl p-8 project-card transition" data-aos="fade-up">
 
-      <div class="skill-pill">.NET Core</div>
-      <div class="skill-pill">React</div>
-      <div class="skill-pill">Azure</div>
-      <div class="skill-pill">Anthropic Claude</div>
-      <div class="skill-pill">SignalR</div>
+      <div class="flex flex-wrap gap-3 mb-5">
+        <div class="skill-pill">Angular 19</div>
+        <div class="skill-pill">EmailJS</div>
+        <div class="skill-pill">Zapier</div>
+        <div class="skill-pill">Netlify</div>
+      </div>
+
+      <h3 class="text-3xl font-black">
+        Aikya Seva Centre
+      </h3>
+
+      <p class="text-pink-300 mt-2">
+        NGO Platform • Rural Empowerment
+      </p>
+
+      <p class="text-slate-300 mt-6 leading-relaxed">
+        Built a complete NGO platform from scratch featuring blogs,
+        volunteer registration,
+        automated email workflows,
+        Google Sheets integration,
+        and responsive Angular UI design.
+      </p>
+
+      <a
+        href="https://aikyaseva.com"
+        target="_blank"
+        class="inline-block mt-6 px-5 py-3 rounded-xl bg-pink-500 hover:bg-pink-400 transition text-black font-semibold"
+      >
+        Visit Website
+      </a>
 
     </div>
 
-    <h3 class="text-4xl font-black">
-      Koritsu AI — FinOps SaaS Platform
-    </h3>
+    <!-- BUS RENTAL -->
+    <div class="glass rounded-3xl p-8 project-card transition" data-aos="fade-up">
 
-    <p class="text-slate-300 text-lg mt-6 leading-relaxed">
-      Built an end-to-end AI-powered cloud optimization platform featuring
-      autonomous tool orchestration, real-time AI streaming,
-      Azure cost analytics, and rightsizing recommendations.
-    </p>
-
-    <div class="grid md:grid-cols-2 gap-8 mt-10">
-
-      <div class="glass rounded-2xl p-6">
-        <h4 class="text-xl font-bold text-cyan-400">
-          AI Orchestration Engine
-        </h4>
-
-        <ul class="mt-5 space-y-3 text-slate-300">
-          <li>• Multi-tool AI orchestration loop</li>
-          <li>• 15-round autonomous execution flow</li>
-          <li>• Function-calling architecture</li>
-          <li>• Conversation state recovery</li>
-          <li>• Multi-tenant query isolation</li>
-        </ul>
+      <div class="flex flex-wrap gap-3 mb-5">
+        <div class="skill-pill">.NET</div>
+        <div class="skill-pill">React</div>
+        <div class="skill-pill">Google Maps API</div>
       </div>
 
-      <div class="glass rounded-2xl p-6">
-        <h4 class="text-xl font-bold text-purple-400">
-          Cloud Intelligence Engine
-        </h4>
+      <h3 class="text-3xl font-black">
+        Bus Rental Service
+      </h3>
 
-        <ul class="mt-5 space-y-3 text-slate-300">
-          <li>• P95 CPU rightsizing analysis</li>
-          <li>• Azure Monitor integration</li>
-          <li>• Real-time VM metrics</li>
-          <li>• Up to 50% cost reduction</li>
-          <li>• AI-generated cloud insights</li>
-        </ul>
+      <p class="text-pink-300 mt-2">
+        Travel Booking Platform
+      </p>
+
+      <p class="text-slate-300 mt-6 leading-relaxed">
+        Developed an online booking platform with OTP authentication,
+        Google Maps integration,
+        booking workflows,
+        and payment support for travel/event transportation.
+      </p>
+
+    </div>
+
+    <!-- AI -->
+    <div class="glass rounded-3xl p-8 project-card transition" data-aos="fade-up">
+
+      <div class="flex flex-wrap gap-3 mb-5">
+        <div class="skill-pill">Azure</div>
+        <div class="skill-pill">SignalR</div>
+        <div class="skill-pill">AI</div>
+        <div class="skill-pill">Cloud</div>
       </div>
+
+      <h3 class="text-3xl font-black">
+        AI-Powered SaaS Systems
+      </h3>
+
+      <p class="text-pink-300 mt-2">
+        Enterprise Cloud Platforms
+      </p>
+
+      <p class="text-slate-300 mt-6 leading-relaxed">
+        Worked on cloud optimization,
+        AI-integrated dashboards,
+        real-time streaming,
+        reporting pipelines,
+        and intelligent monitoring systems for enterprise SaaS products.
+      </p>
+
+    </div>
+
+    <!-- VOICE EMAIL -->
+    <div class="glass rounded-3xl p-8 project-card transition" data-aos="fade-up">
+
+      <div class="flex flex-wrap gap-3 mb-5">
+        <div class="skill-pill">Speech-to-Text</div>
+        <div class="skill-pill">Accessibility</div>
+      </div>
+
+      <h3 class="text-3xl font-black">
+        Voice-Based Email System
+      </h3>
+
+      <p class="text-pink-300 mt-2">
+        Accessibility Project
+      </p>
+
+      <p class="text-slate-300 mt-6 leading-relaxed">
+        Designed a voice-controlled email system for visually impaired users
+        using speech recognition and text-to-speech APIs.
+      </p>
 
     </div>
 
@@ -400,7 +585,7 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section class="px-6 lg:px-20 py-20">
+<section class="px-6 lg:px-20 py-20" id="experience">
 
   <h2 class="section-title gradient-text" data-aos="fade-up">
     Professional Experience
@@ -408,6 +593,7 @@
 
   <div class="timeline-border pl-8 space-y-12">
 
+    <!-- Avalpha -->
     <div data-aos="fade-right">
 
       <div class="glass rounded-3xl p-8">
@@ -416,20 +602,24 @@
           Full Stack Developer — AI & Cloud
         </h3>
 
-        <p class="text-cyan-400 mt-2">
+        <p class="text-pink-300 mt-2">
           Avalpha Technologies Pvt Ltd • Apr 2025 – Mar 2026
         </p>
 
         <p class="mt-6 text-slate-300 leading-relaxed">
-          Built production AI systems for cloud cost optimization,
-          real-time analytics, and autonomous AI-driven cloud insights
-          using Claude tool-calling architecture and Azure services.
+          Worked on enterprise cloud platforms involving AI integrations,
+          Azure monitoring,
+          cost optimization,
+          real-time SignalR streaming,
+          reporting systems,
+          and scalable backend architecture.
         </p>
 
       </div>
 
     </div>
 
+    <!-- Yugensys -->
     <div data-aos="fade-right">
 
       <div class="glass rounded-3xl p-8">
@@ -438,14 +628,16 @@
           Full Stack Developer
         </h3>
 
-        <p class="text-cyan-400 mt-2">
+        <p class="text-pink-300 mt-2">
           Yugensys Software LLP • Oct 2023 – Mar 2025
         </p>
 
         <p class="mt-6 text-slate-300 leading-relaxed">
-          Developed enterprise manufacturing and AdTech platforms using
-          Angular, .NET, AWS Bedrock, and REST APIs while improving
-          scalability, multilingual support, and frontend architecture.
+          Developed manufacturing and AdTech platforms using Angular,
+          .NET, AWS Bedrock,
+          REST APIs,
+          multilingual support,
+          and modern frontend architecture.
         </p>
 
       </div>
@@ -456,7 +648,7 @@
 
 </section>
 
-<!-- CURRENTLY EXPLORING -->
+<!-- CURRENTLY LEARNING -->
 <section class="px-6 lg:px-20 py-20">
 
   <h2 class="section-title gradient-text" data-aos="fade-up">
@@ -467,12 +659,12 @@
 
     <div class="flex flex-wrap gap-4">
 
-      <div class="skill-pill">AI Observability</div>
-      <div class="skill-pill">Distributed AI Agents</div>
+      <div class="skill-pill">AI Infrastructure</div>
+      <div class="skill-pill">Distributed AI Systems</div>
       <div class="skill-pill">Vector Databases</div>
       <div class="skill-pill">Semantic Search</div>
-      <div class="skill-pill">AI Infrastructure</div>
-      <div class="skill-pill">MCP Protocol</div>
+      <div class="skill-pill">AI Observability</div>
+      <div class="skill-pill">Advanced Cloud Architecture</div>
 
     </div>
 
@@ -481,12 +673,12 @@
 </section>
 
 <!-- CONTACT -->
-<section class="px-6 lg:px-20 py-20">
+<section class="px-6 lg:px-20 py-20" id="contact">
 
   <div class="glass rounded-3xl p-12 text-center" data-aos="zoom-in">
 
     <h2 class="text-5xl font-black gradient-text">
-      Let's Build Something Powerful
+      Let's Connect
     </h2>
 
     <p class="text-slate-400 mt-6 text-lg">
